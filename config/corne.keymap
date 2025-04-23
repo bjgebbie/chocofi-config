@@ -14,17 +14,17 @@
                 default_layer {
                         bindings = <
                                 // __________________________________________________________________________________________________________
-                                // |   TAB   |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |   BSPC   |
+                                // |   TAB    |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |   BSPC   |
                                      &kp TAB   &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I   &kp O   &kp P   &kp BSPC
-                                // __________________________________________________________________________________________________________
-                                // |    CTRL  |    A     |     S    |     D     |     F     |  G  |   |  H  |     J     |     K     |     L    |      ;      |  '   |
+                                // ___________________________________________________________________________________________________________________________________
+                                // |    CTRL  |    A     |     S    |     D     |     F     |  G  |   |  H  |     J     |     K     |     L    |      ;      |  '    |
                                      &kp LCTRL &mt LGUI A &mt RALT S &mt RCTRL D &mt LSHFT F &kp G     &kp H &mt RSHFT J &mt RCTRL K &mt RALT L &mt RGUI SEMI &kp SQT
                                 // __________________________________________________________________________________________________________
                                 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
                                      &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                                // __________________________________________________________________________________________________________
-                                //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-                                                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                                //             ________________________________________________________________
+                                //             | DEL/L2  |   SPC/L1   |  ESC  |   |  RET  |  BSPC/L1 | TAB/L2  |
+                                                &lt 2 DEL &lt 1 SPACE  &kp ESC     &kp RET &lt 1 BSPC &lt 2 TAB
                         >;
                 };
                 lower_layer {
