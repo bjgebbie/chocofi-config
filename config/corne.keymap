@@ -21,43 +21,49 @@
                         bindings = <
                                 // _________________________________________________________________________________________________________________________________________
                                 // |     |     Q     |     W     |     E     |     R     |     T     |   |     Y     |     U     |     I     |     O     |     P     |     |
-                                   &trans    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P   &trans
-                                // ___________________________________________________________________________________________________________________________________________
-                                // |     |     A     |     S     |     D     |     F     |     G     |   |     H     |     J     |     K     |     L     |     ;       |     |
-                                   &trans &mt LGUI A  &mt RALT S  &mt RCTRL D &mt LSHFT F    &kp G          &kp H     &mt RSHFT J &mt RCTRL K  &mt RALT L &mt RGUI SEMI &trans
-                                // _________________________________________________________________________________________________________________________________________
+                                   &none    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P   &none
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     A     |     S     |     D     |     F     |     G     |   |     H     |     J     |     K     |     L     |     ;     |     |
+                                   &none &mt LGUI A  &mt RALT S  &mt RCTRL D &mt LSHFT F    &kp G          &kp H     &mt RSHFT J &mt RCTRL K  &mt RALT L &mt RGUI SEMI &none
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
                                 // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
-                                   &trans    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &trans
-                                                        //       _____________________________________________________________________________
-                                                        //       |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                   &none    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &none
+                                //                               |___________|___________|___________|___|___________|___________|___________|
+                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
                                                                    &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
                         >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                                // _________________________________________________________________________________________________________________________________________
+                                // |     |     Q     |     W     |     E     |     R     |     T     |   |     Y     |     U     |     I     |     O     |     P     |     |
+                                   &none    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P   &none
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     A     |     S     |     D     |     F     |     G     |   |     H     |     J     |     K     |     L     |     ;     |     |
+                                   &none &mt LGUI A  &mt RALT S  &mt RCTRL D &mt LSHFT F    &kp G          &kp H     &mt RSHFT J &mt RCTRL K  &mt RALT L &mt RGUI SEMI &none
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
+                                   &none    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &none
+                                //                               |___________|___________|___________|___|___________|___________|___________|
+                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                                                   &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
                         >;
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                                // _________________________________________________________________________________________________________________________________________
+                                // |     |     Q     |     W     |     E     |     R     |     T     |   |     Y     |     U     |     I     |     O     |     P     |     |
+                                   &none    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P   &none
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     A     |     S     |     D     |     F     |     G     |   |     H     |     J     |     K     |     L     |     ;     |     |
+                                   &none &mt LGUI A  &mt RALT S  &mt RCTRL D &mt LSHFT F    &kp G          &kp H     &mt RSHFT J &mt RCTRL K  &mt RALT L &mt RGUI SEMI &none
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
+                                   &none    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &none
+                                //                               |___________|___________|___________|___|___________|___________|___________|
+                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                                                   &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
                         >;
                 };
         };
