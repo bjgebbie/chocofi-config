@@ -19,18 +19,18 @@
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-                                // _____________________________________________________________________________________
-                                // |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   | 
-                                     &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I   &kp O   &kp P
-                                // ________________________________________________________________________________________________________________
-                                // |    A     |     S    |     D     |     F     |  G  |   |  H  |     J     |     K     |     L    |      ;      | 
-                                      &mt LGUI A &mt RALT S &mt RCTRL D &mt LSHFT F &kp G     &kp H &mt RSHFT J &mt RCTRL K &mt RALT L &mt RGUI SEMI 
-                                // __________________________________________________________________
-                                // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | 
-                                    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
-                                //             ________________________________________________________________
-                                //             | DEL/L2  |   SPC/L1   |  ESC  |   |  RET  |  BSPC/L1 | TAB/L2  |
-                                                &lt 2 DEL &lt 1 SPACE  &kp ESC     &kp RET &lt 1 BSPC &lt 2 TAB
+                                // _________________________________________________________________________________________________________________________________________
+                                // |     |     Q     |     W     |     E     |     R     |     T     |   |     Y     |     U     |     I     |     O     |     P     |     |
+                                   &trans    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P   &trans
+                                // ___________________________________________________________________________________________________________________________________________
+                                // |     |     A     |     S     |     D     |     F     |     G     |   |     H     |     J     |     K     |     L     |     ;       |     |
+                                   &trans &mt LGUI A  &mt RALT S  &mt RCTRL D &mt LSHFT F    &kp G          &kp H     &mt RSHFT J &mt RCTRL K  &mt RALT L &mt RGUI SEMI &trans
+                                // _________________________________________________________________________________________________________________________________________
+                                // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
+                                   &trans    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &trans
+                                                        //       _____________________________________________________________________________
+                                                        //       |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                                                   &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
                         >;
                 };
                 lower_layer {
