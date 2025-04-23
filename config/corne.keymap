@@ -33,14 +33,38 @@
                                                                    &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
                         >;
                 };
-                // lower_layer {
-                //         bindings = <
-                //         >;
-                // };
+                lower_layer {
+                        bindings = <
+                                // _________________________________________________________________________________________________________________________________________
+                                // |     |     Q     |     W     |     E     |     R     |     T     |   |     Y     |     U     |     I     |     O     |     P     |     |
+                                   &kp X    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P   &kp X
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     A     |     S     |     D     |     F     |     G     |   |     H     |     J     |     K     |     L     |     ;     |     |
+                                   &kp X &mt LGUI A  &mt RALT S  &mt RCTRL D &mt LSHFT F    &kp G          &kp H     &mt RSHFT J &mt RCTRL K  &mt RALT L &mt RGUI SEMI &kp X
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
+                                   &kp X    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &kp X
+                                //                               |___________|___________|___________|___|___________|___________|___________|
+                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                                                   &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
+                        >;
+                };
 
-                // raise_layer {
-                //         bindings = <
-                //         >;
-                // };
+                raise_layer {
+                        bindings = <
+                                // _________________________________________________________________________________________________________________________________________
+                                // |     |     Q     |     W     |     E     |     R     |     T     |   |     Y     |     U     |     I     |     O     |     P     |     |
+                                   &kp X    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P   &kp X
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     A     |     S     |     D     |     F     |     G     |   |     H     |     J     |     K     |     L     |     ;     |     |
+                                   &kp X &mt LGUI A  &mt RALT S  &mt RCTRL D &mt LSHFT F    &kp G          &kp H     &mt RSHFT J &mt RCTRL K  &mt RALT L &mt RGUI SEMI &kp X
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
+                                   &kp X    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &kp X
+                                //                               |___________|___________|___________|___|___________|___________|___________|
+                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                                                   &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
+                        >;
+                };
         };
 };
