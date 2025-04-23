@@ -33,14 +33,14 @@
                                                                    &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
                         >;
                 };
-                lower_layer {
-                        bindings = <
-                        >;
-                };
+                // lower_layer {
+                //         bindings = <
+                //         >;
+                // };
 
-                raise_layer {
-                        bindings = <
-                        >;
-                };
+                // raise_layer {
+                //         bindings = <
+                //         >;
+                // };
         };
 };
