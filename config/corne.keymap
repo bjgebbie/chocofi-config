@@ -58,11 +58,11 @@
                                    &kp X &hml LGUI A  &hml RALT S  &hml RCTRL D &hml LSHFT F    &kp G          &kp H     &hmr RSHFT J &hmr RCTRL K  &hmr RALT L &hmr RGUI SEMI &kp X
                                 // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
                                 // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
-                                  
-                               
-                               
-                               
-                               
+                                   &kp X    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &kp X
+                                //                               |___________|___________|___________|___|___________|___________|___________|
+                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                                                   &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
+                              >;
                 };
                 sym_layer {
                         bindings = <
