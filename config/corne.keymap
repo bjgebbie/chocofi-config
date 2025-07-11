@@ -19,7 +19,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = < 
-               6 7 8 9 10 18 19 20 21 22 30 31 32 33 34
+               6 7 8 9 10 18 19 20 21 22 30 31 32 33 34 39 40 41
             >; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
@@ -32,7 +32,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <
-               1 2 3 4 5 13 14 15 16 17 25 26 27 28 29 
+               1 2 3 4 5 13 14 15 16 17 25 26 27 28 29 36 37 38
             >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
@@ -54,8 +54,8 @@
                                 // |     |     Z     |     X     |     C     |     V     |     B     |   |     N     |     M     |     ,     |     .     |     /     |     |
                                    &kp X    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH   &kp X
                                 //                               |___________|___________|___________|___|___________|___________|___________|
-                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
-                                                                   &lt 2 DEL  &lt 1 SPACE   &kp ESC         &kp RET   &lt 1 BSPC   &lt 2 TAB
+                                //                               |   ESC/L2  |   SPC/L1  |    TAB    |   |    RET    |  BSPC/L1  |   DEL/L2  |
+                                                                   &lt 2 ESC  &lt 1 SPACE &lt 3 TAB       &lt 3 RET   &lt 1 BSPC   &lt 2 DEL
                               >;
                 };
                 sym_layer {
@@ -70,12 +70,12 @@
                                 // |     |     @     |     `     |     #     |     _     |   PIPE    |   |     &     |     *     |     %     |     ~     |     \     |     |
                                    &kp X    &kp AT      &kp GRAVE   &kp HASH    &kp UNDER   &kp PIPE         &kp AMPS   &kp STAR    &kp PRCNT  &kp TILDE   &kp BSLH   &kp X
                                 //                               |___________|___________|___________|___|___________|___________|___________|
-                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
+                                //                               |           |           |           |   |           |           |           |
                                                                      &trans     &trans      &trans           &trans      &trans      &trans
                         >;
                 };
 
-                raise_layer {
+                func_layer {
                         bindings = <
                                 // _________________________________________________________________________________________________________________________________________
                                 // |     |     F1    |     F2    |     F3    |     F4    |     F5    |   |     F6    |     7     |     8     |     9     |    CAP    |     |
@@ -87,8 +87,25 @@
                                 // |     |     F7    |     F8    |     F9    |    F10    |    F11    |   |     F12   |     1     |     2     |     3     |    NUM    |     |
                                    &kp X     &kp F7     &kp F8       &kp F9      &kp F10     &kp F11        &kp F12     &kp N1       &kp N2      &kp N3    &kp LNLCK  &kp X
                                 //                               |___________|___________|___________|___|___________|___________|___________|
-                                //                               |   DEL/L2  |   SPC/L1  |    ESC    |   |    RET    |  BSPC/L1  |   TAB/L2  |
-                                                                   &bt BT_CLR &bt BT_SEL 0 &bt BT_PRV      &bt BT_NXT   &bt BT_SEL 2 &trans
+                                //                               |           |           |           |   |           |           |           |
+                                                                    &trans     &trans      &trans           &trans      &trans      &trans
+                        >;
+                };
+
+               sys_layer {
+                        bindings = <
+                                // _________________________________________________________________________________________________________________________________________
+                                // |     |           |           |           |           |           |   |           |           |           |           |           |     |
+                                    &kp X  &bt BT_CLR     &kp X       &kp X        &kp X      &kp X          &kp X   &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_SEL 8   &kp X   &kp X
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |           |           |           |           |           |   |           |           |           |           |           |     |
+                                    &kp X    &kp X        &kp X       &kp X        &kp X      &kp X          &kp X   &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5   &kp X   &kp X
+                                // |_____|___________|___________|___________|___________|___________|___|___________|___________|___________|___________|___________|_____|
+                                // |     |           |           |           |           |           |   |           |           |           |           |           |     |
+                                    &kp X    &kp X        &kp X       &kp X        &kp X      &kp X          &kp X   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &kp X   &kp X
+                                //                               |___________|___________|___________|___|___________|___________|___________|
+                                //                               |           |           |           |   |           |           |           |
+                                                                    &trans     &trans      &trans           &trans      &trans      &trans
                         >;
                 };
         };
